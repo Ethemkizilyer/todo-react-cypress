@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import TodoList from './components/TodoList';
 
+
 function App() {
   const [inputText,setInputText]= useState("");
   const [todos, setTodos] = useState([])
@@ -52,13 +53,26 @@ const getLocalTodos = ()=> {
 }
 
   return (
-    <div className="App">
-      <header>
-        <h1>MY TODO LIST</h1>
-      </header>
-      <Form inputText={inputText} setInputText={setInputText} todos={todos} setTodos={setTodos} setStatus={setStatus} filterHandler={filterHandler}/>
-      <TodoList todos={todos} setTodos={setTodos} filteredTodos={filteredTodos}/>
-    </div>
+   
+        <div className="App">
+          <header>
+            <h1>MY TODO LIST</h1>
+          </header>
+          <Form
+            inputText={inputText}
+            setInputText={setInputText}
+            todos={todos}
+            setTodos={setTodos}
+            setStatus={setStatus}
+            filterHandler={filterHandler}
+          />
+          <TodoList
+            todos={todos}
+            setTodos={setTodos}
+            filteredTodos={filteredTodos}
+          />
+        </div>
+    
   );
 }
 

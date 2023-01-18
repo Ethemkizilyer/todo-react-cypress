@@ -195,3 +195,33 @@ select{
 #mamut:active ~ #mazlum{
     display: inline-block;
 } */
+
+body {
+  min-height: 100vh;
+  background-color: rgb(255 255 255);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+li.active {
+  background-color: green;
+  color: #ffffff;
+}
+
+.autocomplete-field input[type="text"] {
+  width: 100%;
+  margin: 1.5rem 0rem 0rem 0rem;
+  height: 40px;
+  padding: 0.5rem;
+}
+
+.autocomplete-field h3 {
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.container-wrapper {
+  max-width: 800px;
+}
