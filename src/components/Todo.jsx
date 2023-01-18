@@ -13,7 +13,7 @@ const Todo = ({ text, todos, key, setTodos ,todo}) => {
         }))
     }
   return (
-    <div className={`todo ${todo.completed && "completed"}`}>
+    <div data-cy="bakar" className={`todo ${todo.completed && "completed"}`}>
       <button className="complete-btn" onClick={completedHandler}>
         <i className="fas fa-check-circle"></i>
       </button>
