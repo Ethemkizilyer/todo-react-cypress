@@ -59,7 +59,7 @@ export default function Autocomplete() {
               className={index === suggestionIndex ? "active" : ""}
               key={index}
               onClick={handleClick}
-              style={{color:"white"}}
+              style={{color:"gray"}}
             >
               {suggestion}
             </li>

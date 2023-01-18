@@ -33,7 +33,7 @@ describe("Test the autocomplete functionality", () => {
   });
 
   it("check filter is working", () => {
-    cy.get('input[type="text"]').type("no");
+    cy.get('input[type="text"]').type("Turkey");
     cy.get('[data-cy="suggestion-list"]')
       .should("be.visible")
       .as("suggestList");
